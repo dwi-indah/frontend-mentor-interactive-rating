@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <div class="card rating active" id="card-rating">
+      <div class="rating-star">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+        <div class="rating-list">
+          <div class="rating-list-item">1</div>
+          <div class="rating-list-item">2</div>
+          <div class="rating-list-item">3</div>
+          <div class="rating-list-item">4</div>
+          <div class="rating-list-item">5</div>
+        </div>
+      <button class="rating-button">Submit</button>
+    </div>
+    <div class="card success" id="card-success">
+      <div class="success-img">
+        <img src="images/illustration-thank-you.svg" alt="">
+      </div>
+      <p class="success-rating">You selected <span></span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+  </main>  
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br>
+    Coded by <a href="dwi-indah.site">Dwi Indah P</a>.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
