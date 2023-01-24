@@ -1,0 +1,19 @@
+$bg_base: #fff;
+
+$font_read: 'Overpass', sans-serif;
+
+$cl_primary: hsl(25, 97%, 53%);
+$cl_gray: hsl(216, 12%, 54%);
+$cl_gray_low: rgba(124, 135, 152, 0.3);
+$cl_gray_darken: hsl(213, 19%, 18%);
+$cl_gray_light: hsl(217, 12%, 63%);
+$cl_white: hsl(0, 0%, 100%);
+$cl_black: hsl(216, 12%, 8%);
+
+// break point
+$smallphone: 390px;
+$mntablet: 768px; 
+$mdtablet: 990px; 
+$desktop: 1024px;
+$desktopxl: 1300px;
+$desktophd: 1900px;

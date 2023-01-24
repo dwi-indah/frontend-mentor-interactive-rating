@@ -1,0 +1,110 @@
+@import 'base/vars';
+@import 'base/global';
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 78vh;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.card {
+    background-color: $cl_gray_darken;
+    border-radius: 24px;
+    padding: 32px 24px;
+    display: none;
+
+    @media (min-width: 900px) {
+        width: 380px;
+    }
+
+    &.active {
+        display: block;
+    }
+}
+
+.rating {
+    &-star {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $cl_gray_low;
+    }
+
+    &-list {
+        margin: 24px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        &-item {
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $cl_gray_light;
+            background-color: $cl_gray_low;
+            cursor: pointer;
+            transition: .3s ease;
+            &.active {
+                background-color: $cl_gray;
+                color: $cl_white;
+            }
+            &:hover {
+                background-color: $cl_primary;
+                color: $cl_white;
+            }
+        }
+    }
+
+    &-button {
+        outline: none;
+        border: none;
+        border-radius: 24px;
+        width: 100%;
+        background-color: $cl_primary;
+        color: $cl_white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 14px 0;
+        transition: .3s ease;
+        &:hover {
+            background-color: $cl_white;
+            color: $cl_primary;
+        }
+    }
+}
+
+.success {
+    text-align: center;
+    &-img {
+        width: 162px;
+        height: 108px;
+        margin: 0 auto;
+    }
+    &-rating {
+        margin: 24px auto 32px;
+        color: $cl_primary;
+        padding: 8px;
+        border-radius: 24px;
+        background-color: $cl_gray_low;
+        text-align: center;
+        width: 200px;
+        opacity: .8;
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 32px;
+}
